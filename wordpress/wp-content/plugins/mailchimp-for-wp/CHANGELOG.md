@@ -1,6 +1,25 @@
 Changelog
 =========
 
+#### 4.3.3 - December 31, 2018
+
+**Fixes**
+
+- Update WPForms integration to properly detect if the WPForms plugin is activated.
+
+**Improvements**
+
+- Write API request parameters to the debug log in case of connection timeouts. 
+- Update JavaScript dependencies.
+
+
+#### 4.3.2 - December 11, 2018
+
+**Fixes**
+
+- Use of `readonly` function, which is only available in WordPress 4.9 or later.
+
+
 #### 4.3.1 - November 28, 2018
 
 **Fixes**
