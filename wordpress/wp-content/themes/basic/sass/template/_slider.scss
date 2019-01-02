@@ -1,0 +1,243 @@
+/*
+*  Revolution Slider
+*/
+.slide-full{
+	margin-left:  (- $grid-gutter-width + 10);
+	margin-right:  (- $grid-gutter-width + 10);
+}
+
+.wpb_revslider_element{
+	overflow: hidden;
+	&:hover{
+		.tparrows{
+			visibility: visible;
+			@include opacity(1);
+		}
+		.tp-leftarrow{
+			@include rtl-margin-left(0px);
+		}
+		.tp-rightarrow{
+			@include rtl-margin-right(0px);
+		}
+	}
+	.tp-bullets.simplebullets.round .bullet{
+		background-image: none;
+		background-color: $gray-darker;
+		border: 2px solid transparent;
+		@include transition(all .5s ease-out);
+		@include box-shadow(none);
+		@include text-shadow(none);
+		@include square(10px);
+		@include border-radius(20px);
+		&.selected{
+			border-color: $theme-color;
+			background-color: $white;
+		}
+	}
+	.no-slides-text{
+		padding: 50px 0px;
+	}
+}
+
+.tp-caption{
+	color: $black;
+	&.tp-caption_1{
+		font-weight: 800;
+		line-height: normal;
+		text-transform: uppercase;
+		padding: 0 0 5px 0;
+		letter-spacing: 5px;
+		border-bottom: 1px solid $theme-color;
+		@include font-size(font-size,12px);
+		&.big{
+			border: 0px;
+			text-transform: none;
+			font-weight: 200;			
+			@include font-size(font-size,90px);			
+			letter-spacing: -4px !important;
+		}
+	}
+	&.tp-caption_2{
+		font-weight: 200;
+		letter-spacing: -4px;
+		line-height: 90px;
+		@include font-size(font-size,90px);
+		&.big{
+			font-weight: 800;
+			line-height: 120px !important;
+			padding-bottom: 5px !important;
+			//border-bottom: 1px solid $theme-color;						
+		}
+	}
+	&.tp-caption_3{
+		font-weight: 800;
+		letter-spacing: -4px;
+		line-height: 90px;
+		@include font-size(font-size,90px);
+	}
+	&.tp-caption_4{
+		line-height: 30px;
+	}
+	&.white{
+		color: $white;
+	}
+	.btn{
+		color: $white;
+		&:hover{
+			color: $white;
+		}
+	}
+}
+
+.tparrows{
+	&.default{							
+		position: absolute;
+		top: 0;
+		@include size(55px,110px);	
+		cursor: pointer;	
+		background: none transparent;			
+		> div{
+			display: block;
+			position: absolute;
+			top: 0;						
+			z-index: 3;
+			cursor: pointer;			
+			@include rtl-left(20px);
+			@include square(percentage(1));			
+			&:after,&:before{				
+				background: $theme-color;
+				content: "";
+				display: block;					
+				@include size(1px,45px);
+				position: absolute;
+				top: 0;				
+			}
+			&:after{					
+				top: 30px;			
+				@include rotate(-45deg);
+				@include rtl-left(0px);
+			}
+			&:before{				
+				@include rotate(45deg);
+				@include rtl-left(0);
+			}			
+		}		
+	}	
+	&.tp-rightarrow{
+		div{
+			left: auto;
+			@include rtl-right(20px);
+			&:after{					
+				top: 30px;			
+				@include rotate(45deg);
+				@include rtl-left(auto);
+				@include rtl-right(0);
+			}
+			&:before{				
+				@include rotate(-45deg);
+				@include rtl-left(auto);
+				@include rtl-right(0);
+			}
+		}
+	}		
+}
+
+.slider-v2{
+	.tp-caption{
+		&.text-style-white-medium{
+			color: $black;
+			font-size: 24px !important;
+		}
+		&.text_light_big_green{
+			color: $green;
+			font-weight: 900;
+			text-transform: uppercase;
+			@include font-size(font-size,80px);			
+		}
+		&.tp-caption{
+			&.small_light_white{
+				color: $black;
+				font-weight: $font-weight-base;
+				font-family: $font-family-base;
+			}
+		}
+	}
+	.btn{
+		background: $green;
+		@include state-hover(0.5s,40px,$gray-darker);
+	}
+}
+
+.slider-v3{
+	.tp-caption{
+		&.text-style-white-medium{
+			color:$black;
+			font-weight: 300;
+			font-size: 24px !important;
+			&.white{
+				color: $white;
+				text-align: center;
+			}
+		}
+		&.text-style-yellow-medium{
+			font-weight: 900 !important;
+			font-size: 80px !important;
+			color: $blue;
+			&:after{
+				background: $blue;
+			}
+			&.white{
+				color: $white;
+				text-align: center;
+				&:after{
+					background: $white;
+					@include vertical-center(30px,1px);
+					top: auto;
+				}
+			}
+		}
+		&.small_light_white{
+			color: $black;
+			font-size: 18px !important;
+			font-family: $font-family-base;
+			&.white{
+				color: $white;
+				text-align: center;
+				font-weight: 300;
+			}
+		}
+		.btn{
+			background: $blue;
+			border-color: darken($blue, .5);
+			&:hover{
+				background: $gray-darker;
+				border-color: darken($gray-darker, .5);
+			}
+		}
+	}
+}
+
+.slider-4{
+	.tp-caption{
+		&.black{
+			color: $white;
+			@include font-size(font-size,40px);
+			font-weight: 300;
+			line-height: normal !important;
+		}
+		&.small_text{
+			color: $white;
+			font-weight: 300 !important;
+			font-family: $font-family-base;
+			@include box-shadow(none);
+			@include text-shadow(none);
+			@include font-size(font-size,$font-size-base);
+		}
+	}
+	.btn{
+		padding: 0 15px !important;
+		line-height: 32px !important;
+		height: 32px !important;
+		@include font-size(font-size,11px);
+	}
+}

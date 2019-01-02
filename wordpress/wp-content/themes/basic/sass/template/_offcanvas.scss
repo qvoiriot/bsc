@@ -1,0 +1,116 @@
+/*
+* Off Canvas
+* --------------------------------------------------
+*/
+.sidebar-offcanvas{
+  height: 100%;
+}
+
+.panel-offcanvas{
+  border: 0;
+  color: $white;
+  margin: 0;
+  height: 100%;
+  background: $navbar-offcanvas-bg;  
+  .offcanvas-heading,
+  .offcanvas-footer{
+    text-align: center;
+    background: transparent;  
+    border: 0;
+  }
+}
+
+#offcanvas-search{
+  width: 100%;
+  background: transparent;
+  border: 0;
+  .wpo-search{
+    border: 1px solid $theme-color;
+    @include border-radius(5px);
+    .input-search{
+      color: #fff;
+      background: transparent;
+    }
+    .btn-search{
+      background: transparent;
+      .fa{
+        color: $theme-color;
+      }
+    }
+  }
+}
+
+.navbar-offcanvas{
+  .nav li a{
+    color: #fff;
+    &:hover{
+      color: $theme-color;
+    }
+  }
+}
+
+.btn-offcanvas{     
+     &:hover,
+     &:active{
+      border: 1px solid $theme-color !important; ;
+      color: $theme-color !important; ;
+     }
+    .fa{
+      color: #fff;
+      padding: 4px;
+      margin: 0 !important;      
+      vertical-align: middle;
+    }
+  }
+
+.btn-toggle-canvas{
+  position: absolute;
+  top: -122px;  
+  @include rtl-left(15px);
+
+}  
+
+
+@media screen and (max-width: 769px) {
+  .row-offcanvas {
+    position: relative;
+    @include transition(all .25s ease-out);
+  }
+
+  .row-offcanvas-right {    
+    @include rtl-right(0);
+  }
+
+  .row-offcanvas-left {    
+    @include rtl-left(0);
+  }
+
+  .row-offcanvas-right
+  .sidebar-offcanvas {    
+    @include rtl-right(-70%);
+  }
+
+  .row-offcanvas-left
+  .sidebar-offcanvas {    
+    @include rtl-left(-70%);
+  }
+
+  .row-offcanvas-right.active {    
+    @include rtl-right(70%);
+  }
+
+  .row-offcanvas-left.active {    
+    @include rtl-left(70%);
+  }
+
+  .sidebar-offcanvas {
+    position: absolute;
+    z-index: 9999;
+    top: 0;
+    width: 70%; /* 6 columns */
+    li > .dropdown-menu{
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }  
+}

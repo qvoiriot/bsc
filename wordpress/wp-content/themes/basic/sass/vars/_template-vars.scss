@@ -1,0 +1,168 @@
+
+/**
+* Web Application Prefix Apply For Making Owner Styles
+*/
+
+$app-prefix                      : wpo !default;
+$vc-prefix                       : wpb_ !default;
+
+
+/**
+ *   Blocks Layout Selectors
+ */
+$block-prefix                    : 'widget' !default;
+$block-selector                  : 'widget' !default;
+$block-heading-selector          : 'widget-title,.widgettitle,.wpb_heading' !default;
+$block-content-selector          : 'widget-content' !default;
+$block-heading-reversed-selector : 'widget-title-reversed' !default;
+$container-prefix                : 'wpb-container' !default;
+
+// Themes colors
+// -------------------------
+$theme-color                     : $green !default;
+$theme-color-default             : $theme-color !default;
+$theme-color-hover               : $theme-color !default;
+$theme-color-secondary           : #262a2e !default;
+$link-color                      : $black !default;
+$nocolor                         : transparent !default;
+
+$image-theme-path                : '../images/' !default;
+$woo-font-path                   : '../fonts/woocommerce/' !default;
+
+$image-icon-url                  : "../images/icons/global.png" !default;
+$image-icon-2-url                : "../images/icons/global-2.png" !default;
+$image-icon-3-url                : "../images/icons/global-3.png" !default;
+
+// Font-family
+// -------------------------
+$fa-version                      : 4.0.3 !default;
+$theme-font-name                 : 'FontAwesome' !default;
+$theme-font-path                 : '../fonts/' !default;
+$icon-font-name                  : 'icomoon' !default;
+
+// Typography
+// -------------------------
+$font-size-lg                    : 48px !important;
+$font-size-md                    : 30px !important;
+$font-size-sm                    : 18px !important;
+$font-size-xs                    : 15px !important;
+$text-lead-font-size             : 18px !default;
+$icon-font-size-base             : 14px !default;
+$headings-transform              : none !default;
+$text-hightlight                 : $black !default;
+$close-font-size                 : 20px !default;
+
+// Body
+// -------------------------
+$body-bg-image                   : none !default;
+
+// Logo
+// -------------------------
+$logo-margin                     : 0px 0px 25px 0px !default;
+$logo-bg                         : "../images/logo-green.png" !default;
+$logo-v2-bg                      : "../images/logo-blue.png" !default;
+
+// Size Image Icon
+// -------------------------
+$image-icon-size                 : 40px !default;
+
+$alert-heading-color             : $white !default;
+$alert-heading-margin            : 0 0 10px 0 !default;
+$alert-heading-padding           : 0 !default;
+$alert-heading-font-size         : 30px !default;
+
+// Breadcrumbs
+// -------------------------
+$breadcrumb-font-size            : $font-size-base !default;
+$breadcrumb-border               : 1px solid $border-color !default;
+$breadcrumb-box-shadow           : 0 5px 5px -5px rgba(0, 0, 0, 0.2) inset !default;
+$breadcrumb-padding-top          : 75px;
+$breadcrumb-padding-bottom       : 75px;
+$breadcrumb-margin               : 0 0 100px 0 !default;
+$breadcrumb-link-color           : $white !default;
+$breadcrumb-link-hover-color     : $theme-color !default;
+$breadcrumb-layout-bg            : $gray-darker url('#{$image-theme-path}breadcrumb-bg.jpg') no-repeat 0 0;
+$breadcrumb-alignment            : center !default;
+$breadcrumb-title-font-weight    : 200 !default;
+$breadcrumb-title-font-size      : 48px !default;
+
+// Carousel
+// -------------------------
+$carousel-border                 : 1px solid darken($border-color, 20%) !default;
+$carousel-font-size              : 12px !default;
+$carousel-font-color             : $black !default;
+$carousel-control-height         : 30px !default;
+
+// Well - Wrapper
+// -------------------------
+$well-padding                    : $theme-padding * 2 !default;
+$well-box-shadow                 : none !default;
+$well-border-radius              : 0 !default;
+
+// Social
+// -------------------------
+$social-display                  : inline-block;
+$social-bg                       : #133F48 !default;
+$social-color                    : $white !default;
+$social-hover-color              : $white !default;
+$social-size                     : 46px !default;
+$social-margin                   : 0 10px 0 0 !default;
+$social-border-radius            : percentage(.5) !default;
+$social-font-size                : 21px !default;
+
+// Box
+// -------------------------
+$box-container-margin            : 30px !default;
+$box-container-padding           : 30px !default;
+$box-container-bg                : transparent !default;
+$box-container-border            : 1px solid $border-color !default;
+$box-container-inner-bg          : transparent !default;
+$box-container-first-margin      : 0 !default;
+
+$box-highlighted-bg              : $gray-darker url("#{$image-theme-path}bg-counter.png") no-repeat 0 0;
+$box-highlighted-margin          : 0px !default;
+$box-highlighted-container-bg    : transparent !default;
+
+$box-heading-margin              : 0 0 30px 0 !default;
+$box-heading-line-bg             : $theme-color !default;
+$box-heading-padding             : 0 0 $theme-margin 0 !default;
+$box-heading-font-size           : 18px !default;
+
+// Pagination
+// -------------------------
+$pagination-active-bg-color      : $theme-color !default;
+$pagination-active-border-color  : $theme-color !default;
+$pagination-hover-bg-color       : $theme-color !default;
+$pagination-hover-link-color     : $white !default;
+$pagination-hover-border-color   : $theme-color !default;
+
+// Thumbnail
+// -------------------------
+$thumbnail-margin-bottom         : 30px !default;
+
+// Tabs
+// -------------------------
+$nav-tabs-color                  : $light-gray !default;
+$nav-tabs-link-font-size         : 14px !default;
+$nav-tabs-link-font-weight       : 900 !default;
+$nav-tabs-border-radius          : 0px !default;
+$nav-tabs-padding                : 6px 0px !default;
+$nav-tabs-margin                 : 30px !default;
+$nav-tabs-font-weight            : 700 !default;
+
+// Contact Us
+// -------------------------
+$contact-bg                      : lighten($border-color, 20%) !default;
+$contact-icon-bg                 : $theme-color !default;
+$contact-icon-size               : 22px !default;
+$contact-icon-color              : $white !default;
+$contact-icon-border-radius      : 2px !default;
+
+@import
+    "form",
+    "layout",
+    "menu",
+    "page",
+    "post-vars",
+    "visual-vars",
+    "widget";

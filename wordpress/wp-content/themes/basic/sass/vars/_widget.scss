@@ -1,0 +1,31 @@
+// Widget title
+// -------------------------
+$widget-title-font-size        : 18px !default;
+
+// Widget Video
+// -------------------------
+$widget-video-name-line-height : 1.5 !default;
+
+// Widget post
+// -------------------------
+$widget-post-meta-font-size    : 12px !default;
+$widget-post-meta-font-style   : italic !default;
+$widget-post-margin            : ($theme-margin / 4) !default;
+
+// Widget twitter
+// -------------------------
+$widget-twitter-margin-bottom  : 40px !default;
+
+// Widget tags cloud
+// -------------------------
+$widget-tag-color              : $text-color !default;
+$widget-tag-color-hover        : $white !default;
+$widget-tag-bg                 : transparent !default;
+$widget-tag-bg-hover           : $theme-color !default;
+$widget-tag-font-size          : $font-size-base !important;
+$widget-tag-padding            : 5px 10px !default;
+$widget-tag-margin             : 2px 0 !default;
+$widget-tag-border             : 1px solid $border-color !default;
+$widget-tag-border-color-hover : $widget-tag-bg-hover !default;
+$widget-tag-border-radius      : 0px !default;
+$widget-tag-transform          : none !default;

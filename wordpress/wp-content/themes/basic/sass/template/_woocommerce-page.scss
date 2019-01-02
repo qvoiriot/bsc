@@ -1,0 +1,57 @@
+/* Woocommerce page  */
+.checkout{
+    .checkbox{
+        margin-top: 24px;
+        margin-bottom: 12px;
+    }
+    .radio label,
+    .checkbox label{
+        margin-left: 0;
+        padding-left: 0;
+        .input-checkbox{
+            position: static;
+            margin: 0;
+        }
+    }
+    .payment_methods{
+        label{            
+            min-height: 20px;
+            padding-left: 20px;
+            margin-bottom: 0;
+            font-weight: 400; 
+            cursor: pointer;
+            .input-radio{                
+                @include rtl-left(0);
+                margin: -6px 0 0 0px;
+                padding: 0;
+                position: absolute;               
+            }  
+            img{
+                display: block;
+            }          
+        }        
+        .payment_method_paypal{
+            .payment_box{
+                @include rtl-margin(0, 0, 20px, 20px);
+            }            
+        }
+    }
+}
+
+.#{$app-prefix}-mainbody{
+    &.woocommerce-page{
+        padding: 0;
+    }
+    .#{$app-prefix}-content-product,
+    .#{$app-prefix}-single-product{
+        padding-top: $container-padding-top;
+        padding-bottom: $container-padding-bottom;
+    }    
+}
+
+.woocommerce-checkout-payment{
+    .input-radio{
+        float: left;
+        margin: 7px 0 0 0;
+    }    
+}

@@ -1,0 +1,247 @@
+// Visual heading and description
+// -------------------------
+$visual-title-font-size                    : 18px !default;
+$visual-description-font-size              : 12px !default;
+$visual-description-font-family            : $font-family-base !default;
+$visual-description-font-weight            : $font-weight-base !default;
+$visual-description-text-color             : $text-color !default;
+$visual-description-margin                 : 10px 0 !default;
+$visual-description-transform              : none !default;
+$visual-description-alignment              : center !default;
+
+// Reassuarence Content
+// -------------------------
+$reassuarence-margin                       : 0 0 0 0 !default;
+$reassuarence-padding                      : 0 0 0 0 !default;
+$reassuarence-icon-margin                  : 0 0 15px 0 !default;
+
+// Progress Bar
+// -------------------------
+$progress-bar-label-padding                : 0 !default;
+$progress-bar-label-margin                 : 0 !default;
+
+// Inforbox
+// -------------------------
+$inforbox-margin                           : 0 0 0 0 !default;
+$inforbox-padding-top                      : 100px !default;
+$inforbox-padding-horizontal               : 30px !default;
+$inforbox-size                             : 503px !default;
+
+$inforbox-title-transform                  : none !default;
+$inforbox-title-font-size                  : 36px !default;
+$inforbox-title-font-family                : $headings-font-family !default;
+$inforbox-title-line-height                : 1.2 !default;
+$inforbox-title-border                     : 1px solid $border-color !default;
+$inforbox-title-margin-bottom              : 25px !default;
+$inforbox-title-padding-bottom             : 0 !default;
+$inforbox-title-letter-spacing             : 0px !default;
+
+$inforbox-content-font-weight              : 500 !default;
+$inforbox-content-color                    : $black !default;
+
+// Callout
+// -------------------------
+$callout-bg                                : $theme-color !default;
+$callout-padding                           : 30px 0px !default;
+$callout-title-font-family                 : $headings-font-family !default;
+$callout-title-color                       : $white !default;
+$callout-btn-margin-vertical               : 16px !default;
+
+// Our Service
+// -------------------------
+$ourservice-alignment                      : left !default;
+$ourservice-icon-wrapper-size              : 52px !default;
+$ourservice-icon-wrapper-border            : 0px solid $theme-color !default;
+$ourservice-icon-wrapper-margin            : 0 0 30px 0 !default;
+$ourservice-icon-margin                    : 10px !default;
+$ourservice-icon-font-size                 : 50px !default;
+// skin 1 - vertical
+$ourservice-vertical-alignment             : center !default;
+$ourservice-vertical-padding               : 0 35px !default;
+$ourservice-vertical-heading-font-size     : 14px !default;
+$ourservice-vertical-heading-transform     : none !default;
+$ourservice-vertical-heading-font-weight   : 800 !default;
+$ourservice-vertical-heading-margin        : 0 0 10px 0 !default;
+$ourservice-vertical-heading-padding       : 0 !default;
+$ourservice-vertical-content-font-size     : 13px !default;
+$ourservice-vertical-icon-margin           : 0 auto 20px auto;
+$ourservice-vertical-icon-size             : 70px !default;
+$ourservice-vertical-icon-font-size        : 25px !default;
+$ourservice-vertical-icon-border           : 2px solid $theme-color !default;
+// skin 2 - horizontal
+
+// skin 3 - circle
+$ourservice-circle-icon-font-size          : 40px !default;
+$ourservice-circle-heading-margin          : 0 0 20px 90px !default;
+
+
+// whattodo
+// -------------------------
+// skin 1 - vertical
+$whattodo-alignment                        : center !default;
+$whattodo-padding                          : 50px 20px 10px !default;
+$whattodo-icon-margin                      : 0 auto 20px !default;
+$whattodo-icon-padding                     : 2px !default;
+$whattodo-icon-border                      : 1px solid $theme-color !default;
+$whattodo-icon-size                        : 74px !default;
+$whattodo-icon-bg                          : $theme-color !default;
+$whattodo-icon-font-size                   : 30px !default;
+$whattodo-icon-color                       : $white !default;
+
+$whattodo-heading-font-weight              : 800 !default;
+$whattodo-heading-margin                   : 0 0 10px 0 !default;
+$whattodo-heading-padding                  : 0 !default;
+$whattodo-heading-transform                : none !default;
+
+// skin 2 - horizontal
+$whattodo-horizontal-padding               : 30px 20px 10px !default;
+$whattodo-horizontal-alignment             : left !default;
+$whattodo-horizontal-icon-margin           : 15px 20px 15px 15px !default;
+$whattodo-horizontal-heading-margin        : 15px 0px 15px 0 !default;
+
+// skin 3 - circle
+$whattodo-circle-border-radius             : 50% !default;
+
+// Parallax
+// -------------------------
+$parallax-bg                               : rgba($gray-darker, 100) !default;
+$parallax-margin                           : (- $grid-gutter-width + 10) !default;
+$parallax-padding                          : 98px 0px !default;
+$parallax-block-heading-color              : $white !default;
+
+// Separator
+// -------------------------
+$separator-grey-line-border-color          : $border-color !default;
+
+// Text Block
+// -------------------------
+$text-block-padding                        : 0px !default;
+
+// Gallery
+// -------------------------
+
+// Info Text
+// -------------------------
+$info-text-content-padding                 : 70px 0 100px !default;
+
+$info-text1-font-size                      : 14px !default;
+$info-text1-color                          : $white !default;
+$info-text1-padding                        : 0 0 10px 0 !default;
+
+$info-text2-padding                        : 40px !default;
+$info-text2-margin                         : 20px !default;
+$info-text2-color                          : #f97354 !default;
+$info-text2-font-size                      : 72px !default;
+$info-text2-border                         : 3px solid #928988 !default;
+
+// Accordion
+// -------------------------
+$accordion-title-font-family               : $headings-font-family !default;
+$accordion-title-margin                    : -1px !default;
+$accordion-title-padding                   : 15px 20px !default;
+$accordion-title-font-weight               : 800 !default;
+$accordion-title-font-size                 : $font-size-base !default;
+$accordion-title-active-bg                 : $gray-darker !default;
+$accordion-title-active-color              : $white !default;
+$accordion-title-bg                        : transparent !default;
+$accordion-title-hover-bg                  : $theme-color !default;
+$accordion-title-line-height               : $headings-line-height !default;
+$accordion-title-color                     : $headings-color !default;
+$accordion-title-hover-color               : $theme-color !default;
+
+$accordion-content-padding                 : 0 !default;
+$accordion-content-margin                  : 0 !default;
+
+$accordion-icon-color                      : $black !default;
+$accordion-icon-font-size                  : $font-size-base !default;
+$accordion-icon-active-color               : $gray-darker !default;
+
+// brand logo
+// -------------------------
+$widget-brand-margin                       : ($grid-gutter-width + 10) !default;
+
+// Product
+// -------------------------
+$product-carousel-position-top             : -103pxpx !default;
+
+// Counter
+// -------------------------
+$counter-title-font-size                   : 12px !default;
+$counter-number-color                      : $white !default;
+$counter-number-margin                     : 10px !default;
+$counter-container-padding                 : 0 0 0 0 !default;
+
+// Pie Chart
+// -------------------------
+$pie-chart-wrapper-margin                  : 0 auto 30px !default;
+$pie-chart-size                            : 165px !important;
+$pie-chart-heading-color                   : $white !default;
+$pie-chart-heading-transform               : none !default;
+
+// Portfolio
+// -------------------------
+$portfolio-border                          : 0 solid $border-color !default;
+$portfolio-text-color                      : $white !default;
+$portfolio-link-hover-color                : $white !default;
+
+$portfolio-filters-margin-top              : 0px !default;
+$portfolio-show-item                       : none !default;
+
+// Our Team
+// -------------------------
+$team-social-icon-font-size                : 17px !default;
+$team-social-icon-color                    : lighten($text-color , 16) !default;
+$team-social-icon-hover-color              : $white !default;
+
+// Shop By Category Filter
+// -------------------------
+$category-filter-border                    : 1px solid $border-color !default;
+$category-filter-image-size                : 160px !default;
+$category-filter-btn-color                 : $theme-color !default;
+
+$category-filter-item-link-color           : $text-color !default;
+$category-filter-item-link-hover-color     : $theme-color !default;
+$category-filter-item-font-size            : 11px !default;
+
+$category-filter-title-font-size           : 15px !default;
+$category-filter-title-margin              : 0px !default;
+$category-filter-title-line-height         : 20px !default;
+$category-filter-item-font-weight          : 700 !default;
+
+$category-filter-content-margin-top        : 20px !default;
+$category-filter-content-margin-horizontal : 20px !default;
+$category-filter-content-font-weight       : 400 !default;
+
+// Testimonial
+// -------------------------
+// gobal
+$testimonial-font-size                     : 12px !default;
+$testimonial-image-size                    : 70px !default;
+
+$testimonial-description-font-size         : 18px !default;
+$testimonial-description-font-style        : italic !default;
+$testimonial-description-color             : $white !default;
+$testimonial-description-margin            : 0 auto 30px !default;
+$testimonial-description-font-family       : $font-family-base !default;
+$testimonial-description-font-weight       : 300 !default;
+$testimonial-customer-name-font-size       : 14px !default;
+$testimonial-customer-name-font-weight     : 800 !default;
+
+//skin1
+$testimonial-skin1-avata-image-size        : 70px !default;
+
+//skin2
+$testimonial-skin2-description-font-size   : 18px !default;
+$testimonial-skin2-description-padding     : 23px !default;
+$testimonial-skin2-padding                 : 50px 0px !default;
+$testimonial-skin2-carousel-padding        : 0 40px !default;
+$testimonial-skin2-title-color             : $white !default;
+$testimonial-skin2-description-font-style  : italic !default;
+$testimonial-skin2-description-font-weight : 300 !default;
+$testimonial-skin2-description-color       : $white !default;
+
+//skin3
+
+//skin4
+$testimonial-skin4-description-font-size   : 18px !default;
+$testimonial-skin4-description-color       : $white !default;

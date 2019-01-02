@@ -1,0 +1,586 @@
+/* widget styles */
+
+/*------------------------------------*\
+    Widget    
+\*------------------------------------*/
+.widget{
+    // no title
+    &.no-title{                
+        .#{$block-heading-selector}{
+            @include hidden;
+        }
+    }
+    .widget-text-column--content{
+        br{
+            @include hidden;
+        }
+    }
+    // widget image
+    .widget_sp_image-image-link{
+        display: block;
+        overflow: hidden;
+        position: relative;
+        img{
+            @include img-responsive();
+            @include transition(all 0.35s);
+            @extend .filter-grayscale;
+        }
+    }
+    // widget post
+    .post-widget{
+        .image{
+            @include size(90px,80px);
+            img{
+                @include square(percentage(1));
+            }
+        }
+    }    
+    &.widget-text-heading{
+        .visual-description{
+            text-align: left;
+        }
+    }
+    // widget archive
+    &.widget_archive{
+        @include lists-style();
+    }
+    // widget categories
+    &.widget_categories{
+        @include lists-style();
+    }
+    // widget page
+    &.widget_pages{
+        @include lists-style();
+    }
+    // widget meta
+    &.widget_meta{
+        @include lists-style();
+    }
+    // widget shopping cart
+    &.widget_shopping_cart{
+        .buttons{
+            @include clearfix;
+            .btn{
+                @include rtl-float-right;
+                @include rtl-margin(0, 0, 0, 5px);
+            }
+        }
+    }
+    // widget nav menu
+    &.widget_nav_menu{
+        @include lists-style();
+    }
+    &.widget_rss{
+        @include lists-style();
+        ul li{
+            background: none;
+            a{
+                padding: 0;                                                
+            }
+        }
+    }    
+    // widget recent entries
+    &.widget_recent_entries{
+        @include lists-style();
+        ul li{
+            background: none;
+        }
+    }
+    // widget recent comments
+    &.widget_recent_comments{
+        @include lists-style();
+        ul{
+            li{
+                background: none;
+                a{
+                    color: $theme-color;
+                }
+            }
+        }
+    }
+    // widget rss
+    &.widget_rss{
+        @include lists-style();
+        ul li{
+            background: none;
+            a{
+                padding: 0;
+            }
+            &:before{
+                display: none;
+            }
+        }
+    }
+    // widget featured video
+    &.widget_wpo_featured_video_widget{
+        .widget-video-name{
+            line-height: $widget-video-name-line-height;
+            font-weight: 700;
+        }
+    }
+    &.widget_wpo_tabs_widget{
+        .nav-tabs{
+            li{
+                margin-bottom: 10px;
+            }
+        }
+    }  
+    &.contact-info,
+    &.widget_wpo_contact_info {
+        li{
+            position: relative;  
+            @include clearfix;  
+            .contact-icon{
+                @include rtl-float-left;
+                @include square(22px);
+                @include border-radius(4px);
+                @include rtl-margin(5px, 10px, 5px, 0);
+                background: $theme-color;
+                .fa,i{
+                    color: $white;
+                    display: block;
+                    margin: 4px 5px;
+                    @include font-size(font-size,13px);
+                }
+            }  
+            &.phone{
+                .contact-icon{
+                    .fa{
+                        margin: 5px 6px;
+                    }
+                }
+            }      
+        }        
+    }
+}
+/*------------------------------------*\
+    Widget Contact Us
+\*------------------------------------*/
+.contact{
+    margin: 0;
+    padding: 0;
+	@include clearfix();
+	dt{
+		@include rtl-float-left();
+		@include size(30px,auto);        
+	}
+	dd{
+		overflow: hidden;
+		margin-bottom: 5px;
+	}
+    .contact-icon{
+        display: block;
+        text-align: center;
+        background: $contact-icon-bg;        
+        @include square($contact-icon-size);
+        @include border-radius($contact-icon-border-radius);
+        @include rtl-float-left();
+        .fa{
+            color: $contact-icon-color;
+            @include font-size(font-size,$font-size-base);
+            @include rtl-margin(0, 0, 0, 4px);
+        }
+    }
+}
+
+.contact-icon-inverse{
+    @include square(32px);
+    @include border-radius(20px);
+    border: 2px solid $black;
+    @include rtl-margin(0,10px,0,0);
+    .fa{
+        color: $black;
+        margin: 8px;
+        @include font-size(font-size,16px);
+    }
+}
+
+/*------------------------------------*\
+    Widget Sidebar
+\*------------------------------------*/
+.#{$app-prefix}-sidebar{
+    select,table{
+    	width: 100%;                
+    }
+    .post-widget,
+    .comment-widget{
+        .blog-title,h6{
+            margin: $widget-sidebar-entry-title-margin;
+            text-transform: $widget-sidebar-entry-title-transform;
+            line-height: $widget-sidebar-entry-title-line-height;
+            font-weight: $widget-sidebar-entry-title-font-weight;
+            @include font-size(font-size,$widget-sidebar-entry-title-font-size);
+        }
+        p{
+            @include font-size(font-size,$widget-post-meta-font-size);
+            font-style: $widget-post-meta-font-style;
+        }
+        .post-date{
+            margin: 0;
+            line-height: 18px;
+        }
+    }
+}
+
+.template-news{
+    .#{$app-prefix}-sidebar{
+        .post-widget,
+        .comment-widget{
+            .blog-title,h6{
+                text-transform: none;
+                font-weight: 600;
+                @include font-size(font-size,14px);
+            }
+        }
+    }
+}
+
+
+/*------------------------------------*\
+    Flickr Gallery Widget
+\*------------------------------------*/
+.widget_wpo_flickr_widget{
+    .flickr_badge_image{
+        @include size(57px,57px);
+        @include rtl-margin(0px,4px,4px,0px);
+    }
+}
+
+.flickr-gallery{
+	img{
+        padding: 0;
+        margin: 4px;
+        @include size(60px,60px);
+        @include rtl-float-left();
+	}
+}
+
+/*------------------------------------*\
+    Tags Widget
+\*------------------------------------*/
+.tagcloud{
+	a{
+        z-index: 1;
+        position: relative;
+        color: $widget-tag-color;
+		border: $widget-tag-border;
+        margin: $widget-tag-margin;
+	    padding: $widget-tag-padding;
+        background: $widget-tag-bg;
+        text-transform: $widget-tag-transform;
+        font-size: $widget-tag-font-size;
+        @include inline-block();
+        @include border-radius($widget-tag-border-radius);
+        &:after{
+            content: "";
+            position: absolute;
+            top: 0;
+            width: 0;
+            z-index: -1;
+            height: 100%;
+            @include rtl-left(0);
+            background-color: $widget-tag-bg-hover;
+            @include transition(all .2s linear);
+        }
+	    &:hover{
+            color: $widget-tag-color-hover;
+	    	border-color:$widget-tag-border-color-hover;
+            &:after{
+                width: 100%;
+            }
+	    }
+	}
+}
+
+/*------------------------------------*\
+	Widget Newsletter
+\*------------------------------------*/
+.#{$app-prefix}-newsletter{          
+    // style 1
+    &.style-1{
+        color: $light-gray;      
+        position: relative;    
+        background-repeat:  no-repeat;
+        background-position:  left top;  
+        overflow: hidden;  
+        @include clearfix();
+        @include font-size(font-size,13px);
+        background-image: url('#{$image-theme-path}bg-newsletter.png');    
+        .widget-title{                        
+            margin: $newsletter-title-margin;
+            color: $newsletter-title-color;
+        }
+        .widget-description{            
+            @include rtl-float-left;      
+            width: 40%;                  
+        }       
+        img{
+            display: block;
+            position: absolute;            
+            top: 0;    
+            @include rtl-right(0px);
+        }
+        .mc4wp-form{
+            margin: 5px 0 0 0;            
+            width: percentage(.56);       
+            @include rtl-float-right;   
+            @include clearfix();     
+            @include rtl-text-align-right;              
+        }
+        .newsletter-input{        
+            font-style: italic;  
+            border: $newsletter-input-border;
+            width: $newsletter-input-width;                          
+            height: $newsletter-input-height;
+            padding: $newsletter-input-padding;
+            color: $newsletter-input-color; 
+            margin: $newsletter-input-margin;     
+            @include rtl-float-left;  
+            @include border-radius(4px);    
+            @include box-shadow(none);                    
+            @include font-size(font-size,$newsletter-input-font-size);
+        }  
+        .btn{
+            line-height: 36px;
+            padding: 0 15px;
+            border: 0;
+            @include box-shadow(none);
+            @include rtl-float-left;
+            &:hover,
+            &:focus{
+                border: 0;
+                background-color: $theme-color;
+            }
+        } 
+        &.no-margin{
+            .newsletter-input{
+                margin-bottom: 0;
+            }
+            .widget-description{
+                margin-bottom: 0;
+            }
+        }
+    }     
+    // style 2
+    &.style-2{
+        padding: 0;
+        background: none transparent;
+        color: $text-color;
+        .newsletter-input{               
+            width: $newsletter-style2-input-size;            
+            @include rtl-float-left;
+            @include rtl-margin(0,6px,0,0);
+            min-height: 38px;
+        }  
+        .visual-title{
+            margin-bottom: 20px;
+        }
+    }
+    // style 3
+    &.style-3{
+        padding: 0;        
+        color: $text-color;
+        background: none transparent;
+        .newsletter-input{              
+            margin: $newsletter-style3-input-margin;
+        }
+        .btn{
+            width: percentage(1);
+        }
+    }
+    // gobal 
+    .btn{
+        line-height: 24px;
+        padding: 5px 15px;        
+    }   
+    .mc4wp-form{
+        margin: 0;
+        img{
+            display: none;
+        }
+    } 
+    .widget-description{
+        margin-bottom: 25px;
+    }
+    .newsletter-input{           
+        @include border-radius(4px);           
+        padding: $newsletter-input-padding;
+    }
+    .newsletter-content{
+        @include clearfix;
+    }         
+}
+
+/*------------------------------------*\
+	Widget Footer
+\*------------------------------------*/
+.#{$app-prefix}-footer{
+    .footer-bottom{
+        ul{
+            @include clear-list();
+            li{
+                border: $footer-list-border;
+                margin: $footer-list-margin;
+                padding: $footer-list-padding;
+                line-height: $footer-list-light-height;
+                text-transform: $footer-list-transform;
+                @include font-size(font-size,$footer-list-font-size);
+                a{
+                    padding: 0;
+                    font-weight: $footer-list-font-weight;
+                }
+            }
+            &.contact-info,
+            &.widget_wpo_contact_info {
+                li{
+                    text-transform: none;
+                    line-height: 2;
+                    @include font-size(font-size,$font-size-base);
+                }
+            }
+        }
+    }
+    .tagcloud{
+        a{
+            color: $white;            
+            border: 1px solid $theme-color;
+            &:hover{
+                border: 1px solid $theme-color;                
+            }
+        }
+    }
+    .widget-twitter{
+        li{
+            text-transform: none;
+            margin-bottom: $theme-margin;
+            line-height: $line-height-base;
+            @include font-size(font-size, $footer-font-size);
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
+    }
+    .input-group{
+        border: 0px;
+        .fa{
+            color: $footer-icon-color;
+        }
+    }
+    .entry-title{
+        @include font-size(font-size, $footer-font-size);
+    }
+}
+
+/*------------------------------------*\
+	Widget Twitter
+\*------------------------------------*/
+.widget-twitter{
+    @include clear-list;
+    li{
+        &:first-child{
+
+        }
+        &:last-child{
+
+        }
+    }
+    .fa,.icon{
+        color: $theme-color;
+        @include font-size(font-size,28px);
+        @include rtl-margin(6px, 10px, 0, 0);
+    }
+}
+
+/*------------------------------------*\
+    Social
+\*------------------------------------*/
+.social{
+    margin: 0;
+    li{        
+        a{
+            text-align: center;
+            background: $social-bg;
+            margin: $social-margin;
+            @include rtl-float-left;
+            @include square($social-size);
+            @include border-radius($social-border-radius);
+            @include transition(color 400ms ease 0s, background-color 400ms ease 0s);
+            @extend .icon-effect-1;
+            > *{
+                display: block;
+                margin: 14px;
+                @include rtl-float-left();
+                @include font-size(font-size,$social-font-size);
+                span{
+                    display: none;
+                }
+            }
+            .social-label{
+                @include hidden;
+            }
+            .fa,.icon{
+                z-index: 1;
+                position: relative;
+                color: $social-color;
+            }
+            &:hover{
+                > *{
+                    color: $social-hover-color;
+                }
+                &:before{
+                    background: $theme-color;
+                }
+                &.twitter{
+                    &:before{
+                        background: #1ab2e8;
+                    }
+                }
+                &.linkedin{
+                    &:before{
+                        background: #006699;
+                    }
+                }
+                &.youtube{
+                    &:before{
+                        background: #df2c28;
+                    }
+                }
+                &.dribbble{
+                    &:before{
+                        background: #F26798;
+                    }
+                }
+                &.facebook{
+                    &:before{
+                        background: #3b589e;
+                    }
+                }
+                &.google-plus{
+                    &:before{
+                        background: #d44132;
+                    }
+                }
+                &.skype{
+                    &:before{
+                        background: #00A8E6;
+                    }
+                }
+                &.tumblr{
+                    &:before{
+                        background: #465a74;
+                    }
+                }
+                &.pinterest{
+                    &:before{
+                        background: #dc0000;
+                    }
+                }
+            }
+        }
+        &:last-child{
+            a{
+                margin: 0;
+            }
+        }
+    }
+}

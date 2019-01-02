@@ -1,0 +1,33 @@
+$theme-color      : $blue;
+$image-theme-path : '../../../images/';
+$woo-font-path    : '../../../fonts/woocommerce/';
+$theme-font-path  : '../../../fonts/';
+
+// Logo
+// -------------------------
+$logo-bg          : "../../../images/logo-green.png";
+$logo-v2-bg       : "../../../images/logo-blue.png";
+
+$image-icon-url   : "../../../images/icons/global.png";
+$image-icon-2-url : "../../../images/icons/global-2.png";
+$image-icon-3-url : "../../../images/icons/global-3.png";
+
+// Social
+// -------------------------
+$social-bg        : #485563;
+
+// Breadcrumb
+// -------------------------
+
+// Typography
+// -------------------------
+
+// Box
+// -------------------------
+
+@import 
+	"form",
+	"layout",
+	"visual-vars",
+	"woocommerce-vars",
+	"post-vars";

@@ -1,0 +1,150 @@
+// Select
+// -------------------------
+$select-size                            : 32px !default;
+$select-border-color                    : $border-color !default;
+$select-padding                         : 4px 6px !default;
+
+// Input
+// -------------------------
+$input-padding                          : 5px 6px !default;
+$input-font-size                        : $font-size-base - 1;
+$input-group-form-bg                    : transparent !default;
+$input-group-form-margin                : 0 0 5px 0!default;
+$input-group-padding                    : 6px 11px !default;
+$input-group-font-size                  : 12px !default;
+$input-group-addon-color                : #fff !default;
+$input-group-height                     : 42px !default;
+$input-form-bg                          : $white !default;
+
+// Button
+// -------------------------
+$btn-transform                          : uppercase !default;
+$btn-padding-vertical                   : 5px !default;
+$btn-padding-horizontal                 : 28px !default;
+$btn-font-size                          : 12px !default;
+$btn-line-height                        : 30px !default;
+$btn-border-radius                      : 4px !default;
+
+$btn-lg-padding-vertical                : 15px !default;
+$btn-lg-padding-horizontal              : 30px !default;
+$btn-lg-font-size                       : 18px !default;
+$btn-lg-line-height                     : $line-height-large !default;
+$btn-lg-border-radius                   : 5px !default;
+
+$btn-sm-padding-vertical                : 7px !default;
+$btn-sm-padding-horizontal              : 12px !default;
+$btn-sm-font-size                       : 10px !default;
+$btn-sm-line-height                     : $line-height-small !default;
+$btn-sm-border-radius                   : $border-radius-small !default;
+
+$btn-xs-padding-vertical                : 4px !default;
+$btn-xs-padding-horizontal              : 10px !default;
+$btn-xs-font-size                       : 10px !default;
+$btn-xs-line-height                     : $line-height-small !default;
+$btn-xs-border-radius                   : $border-radius-small !default;
+
+$btn-outline-color                      : $white !default;
+$btn-outline-hover-color                : $white !default;
+$btn-outline-height                     : 42px !default;
+$btn-outline-bg                         : $theme-color !default;
+$btn-outline-hover-bg                   : $gray-darker !default;
+$btn-outline-border                     : 1px solid $btn-outline-bg !default;
+$btn-outline-border-hover               : 1px solid $gray-darker !default;
+$btn-outline-font-size                  : 10px !default;
+$btn-outline-line-height                : normal !default;
+$btn-outline-border-radius              : 3px !default;
+
+$btn-outline-sm-padding-vertical        : 8px !default;
+$btn-outline-sm-padding-horizontal      : 18px !default;
+$btn-outline-sm-font-size               : 12px !default;
+$btn-outline-sm-line-height             : 1.3 !default;
+$btn-outline-sm-border-radius           : 3px !default;
+
+$btn-outline-xs-padding-vertical        : 5px !default;
+$btn-outline-xs-padding-horizontal      : 15px !default;
+$btn-outline-xs-font-size               : 11px !default;
+$btn-outline-xs-line-height             : 1.2 !default;
+$btn-outline-xs-border-radius           : 3px !default;
+
+$btn-outline-lg-padding-vertical        : 21px !default;
+$btn-outline-lg-padding-horizontal      : 48px !default;
+$btn-outline-lg-font-size               : 14px !default;
+$btn-outline-lg-line-height             : 3 !default;
+$btn-outline-lg-border-radius           : 4px !default;
+
+$btn-inverse-color                      : $gray-darker !default;
+$btn-inverse-hover-color                : $white !default;
+$btn-inverse-bg                         : $yellow !default;
+$btn-inverse-hover-bg                   : $gray-darker !default;
+$btn-inverse-border-color               : $btn-inverse-bg !default;
+$btn-inverse-border-hover-color         : $btn-inverse-hover-bg !default;
+$btn-inverse-font-size                  : 12px !default;
+$btn-inverse-padding                    : 10px 15px !default;
+
+$btn-outline-inverse-color              : $white !default;
+$btn-outline-inverse-bg                 : $theme-color !default;
+$btn-outline-inverse-border-color       : darken($btn-outline-inverse-bg, .3) !default;
+$btn-outline-inverse-hover-bg           : $btn-outline-bg !default;
+$btn-outline-inverse-hover-color        : darken($btn-outline-inverse-color, .2) !default;
+$btn-outline-inverse-border-hover-color : darken($btn-outline-inverse-hover-bg, .3) !default;
+
+$btn-trm-color                          : $theme-color !default;
+$btn-trm-bg                             : transparent !default;
+$btn-trm-border                         : 1px solid $theme-color !important;
+$btn-trm-hover-bg                       : transparent !default;
+$btn-trm-hover-color                    : $theme-color !important;
+$btn-trm-border-hover                   : 1px solid $theme-color !important;
+
+$btn-icon-color                         : $black !default;
+$btn-icon-bg                            : $white !default;
+$btn-icon-border-color                  : $white !default;
+$btn-icon-hover-bg                      : $theme-color !default;
+$btn-icon-hover-color                   : $white !default;
+$btn-icon-border-hover-color            : $theme-color !default;
+$btn-icon-size                          : 32px !default;
+$btn-icon-padding                       : 0  10px !default;
+$btn-icon-font-size                     : 14px !default;
+$btn-icon-line-height                   : 32px !default;
+$btn-icon-border-radius                 : 4px !default;
+
+$btn-icon-default-color                 : $black !default;
+$btn-icon-default-bg                    : #ccc !default;
+$btn-icon-default-border                : #ccc !default;
+
+$btn-icon-danger-color                  : $white !default;
+$btn-icon-danger-bg                     : $theme-color !default;
+$btn-icon-danger-border                 : $theme-color !default;
+
+$btn-icon-outline-color                 : $text-color !default;
+$btn-icon-outline-bg                    : rgba($black,0) !default;
+$btn-icon-outline-border                : rgba($black,0) !default;
+
+// Search
+// -------------------------
+$search-bg                              : $white !default;
+$search-font-size                       : 12px !default;
+$search-padding                         : 10px !default;
+$search-width                           : auto !default;
+$search-button-bg                       : transparent !default;
+$search-main-button-bg                  : $white !default;
+$search-main-button-border              : $border-color !default;
+$search-main-button-color               : $gray-darker !default;
+$search-button-border                   : 0px !default;
+$search-button-hover-bg                 : $white !default;
+$search-button-color                    : $white !default;
+$search-button-size                     : 36px !default;
+$search-button-hover-color              : $gray-darker !default;
+$search-radius                          : 3px !default;
+$search-height                          : 38px !default;
+$search-border                          : transparent !default;
+$search-hover-border                    : $border-color !default;
+$search-border-radius                   : 4px !default;
+$search-categories-border-radius        : 4px !important;
+
+// search topbar
+$search-form-learge-bg                  : $gray-darker !default;
+$search-form-learge-color               : $light-gray !default;
+$search-form-learge-height              : 60px !default;
+$search-form-learge-font-size           : 20px !default;
+$search-form-learge-btn-bg              : lighten($gray-darker, 10%) !default;
+$search-form-learge-btn-color           : $white !default;

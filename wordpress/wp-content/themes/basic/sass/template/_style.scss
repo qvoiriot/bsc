@@ -1,0 +1,598 @@
+// Mixin for generating new styles
+@mixin bg-styles($color) {
+  background-color:$color;
+}
+.bg-primary {
+  @include bg-styles( $brand-primary );
+}
+// Success appears as green
+.bg-success {
+  @include bg-styles( $brand-primary );
+}
+// Info appears as blue-green
+.bg-info {
+  @include bg-styles( $brand-primary );
+}
+// Warning appears as orange
+.bg-warning {
+  @include bg-styles( $brand-primary );
+}
+// Danger and error appear as red
+.bg-danger {
+  @include bg-styles( $brand-primary );
+}
+
+// Mixin for generating new styles
+@mixin text-styles($color) {
+  color:$color;
+}
+.text-primary {
+  @include text-styles( $brand-primary );
+}
+// Success appears as green
+.text-success {
+  @include text-styles( $brand-success );
+}
+// Info appears as blue-green
+.text-info {
+  @include text-styles( $brand-info );
+}
+// Warning appears as orange
+.text-warning {
+  @include text-styles( $brand-warning );
+}
+// Danger and error appear as red
+.text-danger {
+  @include text-styles( $brand-danger );
+}
+.text-skin {
+  @include text-styles( $theme-color );
+}
+.text-hightlight {
+  @include text-styles( $text-hightlight );
+}
+/*------------------------------------*\
+  language/currency
+  \*------------------------------------*/
+  .select-wrapper{
+    .btn-switcher{    
+      font-weight: 300;    
+      text-transform: none;
+      line-height: normal;
+      padding: 0 10px;
+      border-right: 1px solid #263f44;    
+      @include font-size(font-size,13px);    
+      .caret{
+        @include rtl-margin(0, 0, 0, 5px);    
+      }
+    }
+    &.currency_switcher{
+      .btn-switcher{ 
+        border: 0;
+      }    
+    }
+    .dropdown-menu{
+      border: 0;
+      top: 30px;
+      background: $topbar-bg;
+      @include border-radius(0);    
+      @include box-shadow(none);   
+      li{
+        float: none;
+        display: block;
+        margin: 0;
+        line-height: normal;
+        a{
+          font-weight: 300;
+          line-height: normal;
+          padding: 8px 13px;
+          color: $topbar-link-color;
+          @include font-size(font-size,13px);             
+          &:hover{
+            background: $theme-color;
+            color: $white;
+          }      
+        } 
+      }
+    }
+  }
+
+  .setting-dropdown-right{
+    left: auto !important;
+    right: 0 !important;
+  }
+/*------------------------------------*\
+    alert
+    \*------------------------------------*/
+    .alert-has-bg{
+      padding: 25px 30px; 
+      min-height: 140px;
+      margin: 0;
+      .alert-heading,
+      .heading,.widget-title{
+        padding: $alert-heading-padding; 
+        margin: $alert-heading-margin;    
+        @include font-size(font-size,$alert-heading-font-size);    
+        &:after,
+        &:before{
+          display: none;
+        }
+      }
+    }
+
+/*------------------------------------*\
+    Tabs
+    \*------------------------------------*/
+    .tabs-list{
+      border: 0;
+      margin-bottom: 40px;
+      text-align: center;  
+      li{
+        float: none;
+        @include inline-block();
+      }
+    }
+
+/*------------------------------------*\
+    Breadcrumbs
+    \*------------------------------------*/
+    .breadcrumb{
+     > .fa{
+      @include rtl-margin(0, 5px, 0, 5px);
+    }
+  }
+
+/*------------------------------------*\
+    Customize Live Theme Editor
+    \*------------------------------------*/
+    #wpo-customize{  
+      top: 0;
+      border: 0;
+      background: $white;
+      transform: translateZ(0px);
+      -webkit-transform: translateZ(0px);
+      -moz-transform: translateZ(0px);
+      -o-transform: translateZ(0px);
+      -ms-transform: translateZ(0px);
+      @include transition(left 0.5s ease-in-out 0s);
+      @include box-shadow(3px 2px 5px 0 rgba(50, 50, 50, 0.2));  
+      .panel{
+        border-color: lighten($black, 78);
+        .accordion-inner{
+          padding: 10px;
+          border-color: lighten($black, 78);
+        }
+      }
+      .panelbutton{
+        border-color: darken($border-color, 5%);
+        @include box-shadow(3px 3px 5px -3px rgba($black, 0.15));
+      }
+      .panel-heading{
+        padding: 3px 10px;
+      }
+      .group-input{
+        margin-top: 0;
+        margin-bottom: 15px;
+        @include rtl-margin-right(6px);
+      }
+      .nav{
+        border: 0;
+        a{
+          color: $black;
+          padding: 5px 10px;
+          background: $white;
+          @include border-radius(0);
+          @include rtl-margin(0, 3px, 3px, 0);
+          border: 1px solid lighten($black, 78);
+          &:hover{
+            background: $white;
+          }
+          &::before{
+            display: none;
+          }
+        }
+        .active{
+          > a, &:hover,&:focus,&:active{
+            background: $white;
+            &::before{
+              display: none;
+            }
+          }
+        }
+      }
+      .label{
+        padding: 4px 5px;
+      }
+      select,input[type="text"]{
+        @include border-radius(0);
+        border-color: lighten($black, 78);
+      }
+      .accordion-toggle{
+        @include font-size(font-size,12px);
+        text-transform: uppercase;
+        color: $black;
+        width: percentage(1);
+        @include inline-block();
+        &:hover{
+          color: $black;
+        }
+      }
+      .panelbutton{
+        background: $theme-color;
+        @include rtl-right(-40px);
+        @include box-shadow(none);
+        color: $white;
+        border: 0;
+        padding: 0;
+        display: table;
+        @include font-size(font-size,18px);
+        text-align: center;
+        @include size(40px,40px);
+        @include border-right-radius(3px);
+        @include border-right-radius(3px);
+        @include transition(all 0.3s ease-in-out 0s);
+        > *{
+          display: table-cell;
+          vertical-align: middle;
+        }
+      }
+      .panel-heading{
+        padding: 2px 5px;
+      }
+      .form-group label{
+        color: lighten($black, 50%);
+      }
+    }
+
+/*-------------------------------------------
+	Modal
+  -------------------------------------------*/
+  .modal-content {
+   @include box-shadow(none);
+   @include border-radius(0);
+ }
+ .modal-lg {
+  width: 900px;
+  &.modal-min-width{
+    @include size(500px,auto);
+    min-height: 90px;
+    .modal-content{
+      border: 0;
+    }
+  }
+  .total,.buttons{
+    text-align: center;
+  }
+}
+
+/*-------------------------------------------
+	Pagination
+  -------------------------------------------*/
+  .#{$app-prefix}-pagination{
+    @include clearfix;
+    .pagination,
+    .page-numbers{
+      margin: 0;
+      border: 0;
+    }
+  }
+
+  .result-count{
+   padding: 10px 0;
+   margin: 0;
+ }
+
+/*------------------------------------*\
+    Mobile
+    \*------------------------------------*/
+    .active-mobile{
+
+      .btn{
+        @include rtl-margin-right(10px);
+      }
+
+    &:first-child:before{
+      display: none;
+    }
+
+
+    &:hover{
+      background-color: lighten($topbar-bg, 5%);
+      .fa,.icon{
+        color: $theme-color;
+      }
+      &:before{
+        display: none;
+      }
+      .active-content{
+        @include rtl-left(auto);
+      }
+    }
+    > .fa, > .icon{
+      display: block;
+      color: $white;
+      position: absolute;
+      top: 50%;
+      @include font-size(font-size,18px);
+      @include rtl-left(50%);
+      @include rtl-margin(-10px, 0px, 0, -10px);
+    }
+    &.cart-popup{     
+      
+    }
+    .wpo-search{
+      border: 0;
+      background-color: #212121;
+      .input-search,.btn-search{
+        background-color: transparent;
+        color: $white;
+      }
+      .input-search{
+        @include font-size(font-size,15px);
+      }
+      .btn-search{
+        .fa{
+          color: $white;
+        }
+      }
+    }
+    .active-content{
+      position: absolute;      
+      z-index: 9999;
+      color: $topbar-link-color;
+      padding: $theme-margin;
+      background-color: lighten($topbar-bg, 5%);
+      @include rtl-left(auto);      
+      position: absolute;
+      min-width: 270px;  
+      border: 0;   
+      top: 40px;
+      @include border-radius(0); 
+      @include rtl-right(0);
+      @include rtl-text-align-left();
+      @include transition(opacity 0.3s ease 0s);  
+    }
+
+
+    &.cart-popup{
+      .active-content{
+        background-color: lighten($topbar-bg, 5%);
+        min-width: 320px;
+      }
+    }
+
+    .title{
+      color: $white;
+      @include rtl-margin(0, 0, 10px, 0);
+      padding-bottom: $padding-large-vertical;
+      border-bottom: 1px solid lighten($topbar-bg, 10%);
+    }
+    ul{
+      li{
+        display: block;
+        margin: 0;
+        padding: 10px 0;
+        line-height: normal;
+        text-transform: none;
+        @include font-size(font-size,$font-size-base);
+      }
+    }
+  }
+
+
+
+
+  .page-title{
+    @extend .blog-title;
+    margin: $page-title-margin;  
+    text-align: $page-title-align;
+  }
+
+/*------------------------------------*\
+    Custom Panel
+    \*------------------------------------*/
+    .custom-panel {
+      border: 0;
+      .panel-footer{
+        border-width: 0 1px 1px 1px;
+        border-style: solid;
+        border-color: $panel-inner-border;
+      }
+    }
+
+    .pricing-tables{
+      .panel-heading{
+        border-color: $border-color;
+      }
+      .panel-footer{
+        border-top: 0px;
+      }
+    }
+
+    .quick-setting{    
+      @include rtl-float-left;   
+      position: relative;
+      &.quick-setting-inversed{
+        &.open{
+        .heading-title{
+          position: relative;
+          background: #f3f3f3;
+          z-index: 999;
+          &:before{
+          content: "";
+          position: absolute;
+          left: 0;
+          top: 0;
+          height: 100px;        
+          background: transparent; 
+        } 
+        }              
+      }
+      }      
+      .heading-title,
+      .widget-title{
+        cursor: pointer;
+        margin: 0;        
+        font-weight: 800;
+        padding: 18px 20px;
+        text-transform: uppercase;    
+        @include clearfix;
+        @include font-size(font-size,12px);            
+        @include border(0px 1px 0px 0px, $border-color, solid);
+        .fa{
+          @include rtl-margin(0, 5px, 0, 0);
+          @include font-size(font-size,14px);
+        }
+        > *{
+          @include rtl-float-left;
+        }            
+      }  
+      &.setting-accout{
+        .heading-title{
+          border-left: 1px solid $border-color;
+        }
+      }
+      &.setting-search{
+        .search-dropdown{
+          background: #fff;
+          padding: 15px;          
+          border-top: 5px solid $theme-color;          
+          @include border-radius(5px);          
+          @include box-shadow(0px 0px 10px 0px rgba($black, .2));                   
+        }
+      }
+      &.setting-mini-cart{
+        padding: 12px 20px;
+        .mini-cart-items{
+          color: $black;
+        }     
+      }
+      &.setting-accout{
+        .menu-topbar{
+          @include clear-list();
+        }
+      }
+      &.setting-cart{
+        .setting-dropdown{
+          background: $white;
+          padding: 15px;
+          border-top: 5px solid $theme-color;
+          @include border-radius(5px);          
+          @include box-shadow(0px 0px 10px 0px rgba($black,.2));         
+        }
+        .mini-cart-items{
+          color: $black;
+        }
+      }
+      .setting-dropdown{
+        padding: 20px 25px;
+        background: $concrete;      
+        min-width: 250px;
+        position: absolute;
+        top: 96%;
+        z-index: 99999999999999; 
+        visibility: hidden;
+        pointer-events: none;
+        @include rtl-left(0);
+        @include opacity(0);
+        @include transform-style(flat);
+        @include backface-visibility(hidden);
+        @include translate3d(0px, -5px, 0px);      
+        @include transition(all .2s ease-in 0s);
+        &.setting-lc-menu{
+          .select-wrapper-title{
+            font-weight: 700;
+            text-transform: uppercase;
+            @include font-size(font-size,12px);           
+            .fa{
+              @include rtl-margin(-1px, 5px, 0px, 0);
+              @include rtl-float-left;
+              @include font-size(font-size,15px);               
+            }
+          }
+          .menu-topbar{
+            @include rtl-margin-left(28px);
+          }
+        }
+        .menu-topbar{
+          li{
+            line-height: 2.66666;                  
+            a{
+              border: 0;
+              padding: 0;
+              font-weight: 800;
+              text-transform: uppercase;                        
+              @include font-size(font-size,12px); 
+              @include transition(color .5s ease-in-out);
+              .fa,
+              [class^="icon-"], [class*=" icon-"]{
+                width: 25px;
+                margin: -3px 0 0 0;
+                @include inline-block;
+                @include transition(color .5s ease-in-out);
+                @include font-size(font-size,15px); 
+              } 
+              &:hover{
+                .fa,
+                [class^="icon-"], [class*=" icon-"]{
+                  color: $theme-color;
+                }
+              }
+            }          
+            &.account{
+              &:before{
+                content: "\f13e";
+              }            
+            }
+            &.wishlist{
+              &:before{
+                content: "\f004";            
+              }                   
+            }     
+            &.checkout{
+              &:before{
+                content: "\f044";                
+              }                   
+            }  
+            &.shopping-cart{
+              &:before{
+                content: "\f02c";                
+              }                   
+            }          
+          }        
+        }
+      }
+      &:hover{
+        .setting-dropdown{
+          visibility: visible;
+          pointer-events: all;
+          @include opacity(1);
+          @include translate3d(0px, 0px, 0px);        
+        }
+      }
+      .btn-icon{
+        @include rtl-margin-right(2px);
+        &:hover{
+          background: $white;
+          .fa{
+            color: $black;
+          }
+        }
+      }      
+      .btn-icon-danger{
+        &:hover{
+          background: $theme-color;
+          .fa{
+            color: $white;
+          }
+        }
+      }
+      .btn-icon-outline{
+        &:hover{
+          background: transparent;
+          .fa{
+            color: $text-color;
+          }
+        }
+      }
+    }

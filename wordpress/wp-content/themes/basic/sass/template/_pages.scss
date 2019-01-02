@@ -1,0 +1,139 @@
+// Elements Boostrap Page
+//----------------------------------
+.bs-component,
+.bs-docs-section{
+	.modal{
+		bottom: auto;
+		display: block;
+		left: auto;
+		position: relative;
+		right: auto;
+		top: auto;
+		z-index: 1;
+	}
+	p:empty{
+		margin: 0;
+		padding: 0;
+		@include hide-text();
+	}
+	br{
+		display: none;
+	}
+	.modal-dialog{
+		width: 90%;
+	}
+}
+
+// VC Template Page
+//----------------------------------
+
+.corporate-v1{
+	.font-size-lg{
+		text-transform: $text-capitalize;
+	}
+}
+
+// News Page, Blog page
+//----------------------------------
+.news-page{	
+	padding-bottom: 80px;
+}
+.blog-page{
+	padding: 0;
+}
+
+// Contact Page
+//----------------------------------
+
+div.wpcf7-validation-errors{
+	margin: 0;
+	padding: 15px;
+}
+.contact-form-content{
+	padding: 0;
+	min-height: 260px;
+	background: $contact-bg;
+	margin-bottom: $theme-margin + 10;	
+	.rounded{
+		color: $white;
+		@include size(40px,40px);
+		background: darken($body-bg, 20%);
+		.fa,.icon{
+			@include font-size(font-size,16px);
+			margin: 13px;
+		}
+	}
+	small{
+		color: darken($text-color, 20%);
+	}
+}
+
+// Page portfolio
+//----------------------------------
+.page-portfolio{
+	.isotope-filter{
+		text-align: center;
+	}
+	.wpo-portfolio{
+		.widget-title{
+			margin-bottom: 40px;
+			padding-bottom: 25px;
+		}
+	}
+	&.portfolio-4-columns{
+		[class*="col-sm-3"]{
+			.wpo-portfolio-title{
+				@include size(percentage(.7),percentage(.42));
+			}
+			.entry-title{
+				&:after{
+					display: none;
+				}
+			}
+			.entry-description{
+				@extend .hidden;
+			}
+			.entry-title-bottom{
+				@include font-size(font-size,$font-size-base);
+				padding: $theme-padding;
+			}
+		}
+	}
+}
+
+
+// Page Not Found
+//----------------------------------
+.page_not_found{
+	@include rtl-margin(20px, 0, 80px, 0);
+	.error-title{
+		letter-spacing: $error-title-letter-spacing;
+		margin: $error-title-margin;
+		@include font-size(font-size,$error-title-font-size);
+	}
+	.error-content{
+		line-height: 40px;
+		margin-bottom: 30px;
+		@include font-size(font-size,$error-content-font-size);
+	}
+	.page-footer{
+		p{
+			margin-bottom: 20px;
+		}
+	}
+	.wpo-search{
+		border: 2px solid lighten($border-color, .3);
+		@include transition(border .5s ease-in 0s);
+		&:focus,
+		&:hover{
+			border-color: $theme-color;
+		}
+	}
+	.form-404{
+		margin-bottom: 40px;
+	}
+}
+
+.vc-temlpate-fullwidth{
+	padding: 0;	
+}

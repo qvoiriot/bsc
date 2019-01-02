@@ -1,0 +1,59 @@
+/**
+* $Desc
+*
+* @version    $Id$
+* @package    wpbase
+* @author     WPOpal  Team <wpopal@gmail.com, support@wpopal.com>
+* @copyright  Copyright (C) 2014 wpopal.com. All Rights Reserved.
+* @license    GNU/GPL v2 or later http://www.gnu.org/licenses/gpl-2.0.html
+*
+* @website  http://www.wpopal.com
+* @support  http://www.wpopal.com/support/forum.html
+*/
+//@import "compass";
+// Core variables and mixins
+@import "../../vars/vars-global";       // Global    Variables =>        Color   ,          Padding, Margin ... etc
+@import "vars/variables";               // Variables Bootstrap
+@import "vars/variables-wordpress";     // Variables Wordpress
+@import "../../mixins/mixins";
+@import "../../mixins/template-mixins";
+@import "../../vars/template-vars";     // Element   Variables =>        header, container, footer   ...    etc
+@import "../../rtl/rtl";                // RTL
+
+// Stylesheet
+
+@import "../../template/layout";
+
+@import "../../template/pages";
+
+@import "../../template/post";
+
+@import "../../template/widgets-layout";
+
+@import "../../template/widgets";
+
+@import "../../template/shortcodes";
+
+@import "../../template/base";
+
+@import "../../template/offcanvas";
+
+@import "../../template/menu";
+
+@import "../../template/form";
+
+@import "../../template/style";
+
+@import "../../template/utilities";
+
+@import "../../template/visual-composer";
+
+@import "../../template/slider";
+
+@import "../../template/responsive";
+
+@import "../../template/theme-effect";
+
+@import "../../template/editor-style";
+
+@import "addition/style";

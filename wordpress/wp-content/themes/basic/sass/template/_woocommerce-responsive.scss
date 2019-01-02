@@ -1,0 +1,154 @@
+/*
+*  Woocommerce Responsive
+*/
+
+@mixin product-grid-respon() {
+    .product-block{
+        @include transition(none);
+        .btn-outline,.button,#submit{
+            min-width: inherit;
+        }
+        .price{
+            @include font-size(font-size,$font-size-base);
+        }
+        .button-groups{
+            @include hidden;
+        }
+        .caption{            
+            visibility: visible;
+            @include opacity(1);
+            @include transition(none);
+            @include transform(none);
+        }
+        .image{
+            .image-effect,
+            .image-hover{
+                visibility: visible;
+                @include opacity(1);
+                @include transition(none);
+                @include transform(none);                
+            }
+            &:before,
+            &:after{
+                @include hidden;
+            }
+            &:hover{
+                .image-effect,                
+                .image-hover{
+                    visibility: visible;
+                    @include opacity(1);
+                    @include transition(none);
+                    @include transform(none);
+                }
+            }            
+        }
+        .image-effect,
+        .category,
+        .overlay,
+        .add-links{
+            @include hidden;
+        }
+        &.product-grid{
+            padding-bottom: 10px;
+        }
+    }
+    .product-grid{
+        .name{
+            margin-top: 10px;
+        }
+        .btn-outline{
+            padding: 0 10px;
+            span{
+                @include hidden;
+            }
+        }
+        .add-button,.price{
+            visibility: visible;
+            @include transition(none);
+            @include transform(none);
+            @include opacity(1);
+            margin-bottom: 15px;
+        }
+        &:hover{
+            .caption{
+                visibility: visible;
+                @include opacity(1);
+                @include transition(none);
+                @include transform(none);
+            }
+            .price,
+            .add-button{
+                @include transition(none);
+                @include transform(none);
+                visibility: visible;
+                @include opacity(1);
+            }
+        }
+    }
+    .products .has-col5 .product-grid:hover .caption, 
+    .products .has-col6 .product-grid:hover .caption{
+        visibility: visible;
+        @include opacity(1);
+        @include transition(none);
+        @include transform(none);
+    }      
+}
+
+@mixin product-grid-mobile() {
+    .product-grid{
+        .btn-outline{
+            padding: 0 10px;
+            span{
+                display: inline-block;
+            }
+        }
+    }
+    .widget{
+        &.widget-products{
+            .tabs-list{
+                li{
+                    margin-bottom: $theme-margin;
+                }
+            }
+        }
+    }    
+}
+
+// lerge desktop
+@media (min-width: $screen-lg) {
+
+}
+
+@media (min-width: $screen-md) and (max-width: $screen-md-max){
+    @include product-grid-respon();
+    .product-info{
+        .product-title{
+            @include font-size(font-size,20px);
+        }
+    }
+}
+
+@media (min-width: $screen-sm) and (max-width: $screen-sm-max) {
+    @include product-grid-respon();
+    .product-grid{
+        .name{
+            min-height: 60px;
+            @include font-size(font-size,11px);
+        }
+    }
+}
+
+@media (max-width: $screen-sm-max) {
+    @include product-grid-respon();
+    @include product-grid-mobile();
+}
+
+@media (max-width: $screen-xs-max) {
+    @include product-grid-respon();
+    @include product-grid-mobile();
+}
+
+@media (max-width: $screen-phone) {
+    @include product-grid-respon();
+    @include product-grid-mobile();
+}
