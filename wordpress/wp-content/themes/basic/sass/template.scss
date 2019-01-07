@@ -25,6 +25,7 @@
 9. Responsive
 10. Widget
 11. Shame
+11. Custom style
 -------------------------------------------------------------------*/
 //@import "compass";
 @import "vars/vars-global";
@@ -83,3 +84,6 @@
 
 /* 11. shame */
 @import "template/shame";
+
+/* 12. custom style */
+@import "custom/r_custom";

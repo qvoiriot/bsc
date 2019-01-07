@@ -1,0 +1,14 @@
+/* CUSTOM MEGA MENU */
+.mega-no-hover
+{
+    ul
+    {
+        li
+        {
+            a:hover
+            {
+                padding: 0;
+            }
+        }
+    }
+}
