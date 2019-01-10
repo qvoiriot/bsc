@@ -38,12 +38,7 @@ $footer = wpo_theme_options('footer-style','default');
 			<?php
             $img_footer = wpo_theme_options('image-footer','');
             $copyright = wpo_theme_options('copyright_text', 'Copyright &copy; 2014 - Basic theme - All Rights Reserved');
-            if($img_footer!=''){
-                ?>
-                <div class="footer-logo">
-                    <img src="<?php echo esc_url( $img_footer ); ?>" alt="img-footer" />
-                </div>
-            <?php } ?>
+            ?>
 
             <?php if ( is_active_sidebar('copyright') ) : ?>
                 <?php dynamic_sidebar('copyright'); ?>
